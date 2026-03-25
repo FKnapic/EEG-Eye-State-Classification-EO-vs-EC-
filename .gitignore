@@ -1,3 +1,17 @@
+# EEG sirovi podaci
+*.eeg
+*.vhdr
+*.vmrk
+*.fif
+*.json
+*.tsv
+
+# Mape za predobradu / ekstrakciju značajki / modele
+filtered_data/
+cleaned_data/
+features/
+models/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

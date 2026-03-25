@@ -93,16 +93,14 @@ python src/main.py
 
 ---
 
-## 📦 Dataset
+##  Dataset
 
-Due to its large size, the dataset is not included in this repository.
 
 You can download it here:
-👉 *[INSERT DATASET LINK]*
+https://openneuro.org/datasets/ds004148/versions/1.0.1
 
----
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * MNE (EEG processing)

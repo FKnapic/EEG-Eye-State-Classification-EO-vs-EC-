@@ -1,0 +1,21 @@
+filenames_template = [
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_electrodes.tsv",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesclosed_channels.tsv",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesclosed_eeg.eeg",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesclosed_eeg.json",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesclosed_eeg.vhdr",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesclosed_eeg.vmrk",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesclosed_events.tsv",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesopen_channels.tsv",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesopen_eeg.eeg",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesopen_eeg.json",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesopen_eeg.vhdr",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesopen_eeg.vmrk",
+    "sub-{0:02d}/ses-session1/eeg/sub-{0:02d}_ses-session1_task-eyesopen_events.tsv"
+]
+
+# Kreiraj sparse-checkout datoteku i upiši samo session1 za svih 60 subjekata
+with open(".git/info/sparse-checkout", "w") as f:
+    for sub_num in range(1, 61):  # svi ispitanici 1–60
+        for line in filenames_template:
+            f.write(line.format(sub_num) + "\n")

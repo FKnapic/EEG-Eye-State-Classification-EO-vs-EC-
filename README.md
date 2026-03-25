@@ -84,8 +84,9 @@ https://github.com/OpenNeuroDatasets/ds004148
 
 This dataset uses git-annex, meaning large EEG files are not stored directly in the repository and must be downloaded separately.
 
-## Project Structure
+##  Project Structure
 
+```
 project-root/
 │
 ├── data/                # dataset (created during setup)
@@ -93,7 +94,7 @@ project-root/
 │   ├── PreuzimanjeSaPoveznica.txt
 │   └── Skripta.txt
 └── README.md
-
+```
 ## Setup
 
 1. Clone the dataset

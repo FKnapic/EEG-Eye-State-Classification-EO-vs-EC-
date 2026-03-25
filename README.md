@@ -79,11 +79,43 @@ Three models were used:
 
 ##  Dataset
 
+The dataset is available at:
+https://github.com/OpenNeuroDatasets/ds004148
 
-You can download it here:
-https://openneuro.org/datasets/ds004148/versions/1.0.1
+This dataset uses git-annex, meaning large EEG files are not stored directly in the repository and must be downloaded separately.
+
+## Project Structure
+
+project-root/
+│
+├── data/                # dataset (created during setup)
+├── setup/
+│   ├── PreuzimanjeSaPoveznica.txt
+│   └── Skripta.txt
+└── README.md
+
+## Setup
+
+1. Clone the dataset
+
+ cd <project-path>
+ git clone https://github.com/OpenNeuroDatasets/ds004148.git data
+ cd data
 
 
+2. Initialize git-annex
+ git annex init "local-machine"
+
+Run the download script (PreuzimanjeSaPoveznica.txt)
+Go back to the project root:
+
+ cd ..
+
+Run the script:
+python setup/Skripta.txt
+
+#Result
+fter completion, the data will be available in: data/sub-XX/ses-session1/eeg/
 ##  Technologies Used
 
 * Python

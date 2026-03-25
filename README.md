@@ -52,7 +52,7 @@ Three models were used:
 
 ---
 
-## 📊 Results
+## Results
 
 | Model               | Accuracy |
 | ------------------- | -------- |
@@ -74,22 +74,6 @@ Three models were used:
   * **Alpha** → dominant in relaxed/closed-eye states
   * **Beta** → dominant in active/open-eye states
 * Wavelet entropy captures signal complexity and improves classification
-
----
-
-## 🚀 How to Run
-
-### 1. Install dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### 2. Run full pipeline
-
-```
-python src/main.py
-```
 
 ---
 
